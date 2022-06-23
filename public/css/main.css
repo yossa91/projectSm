@@ -1,0 +1,703 @@
+@charset "UTF-8";
+
+#intro{
+    width: 100%;
+}
+.fullsc{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.fulltt{
+    display: block;
+    position: absolute;
+    width: 420px;
+    padding-top: 320px;
+    top: 50%;
+    left: 50%;
+    margin: -160px 0 0 -210px;
+    background: url("../img/full/main_text.png") center no-repeat;
+    background-size: cover;
+}
+/*시작*/
+.sec{
+    width: 100%;
+    padding-top: 370px;
+    background:url("../img/full/main_intro.png") center top no-repeat;
+    z-index: -999;
+}
+#mainWrap{
+    width: 1200px;
+    margin: auto ;
+}
+/*상점찾기*/
+.market{
+    width: 600px;
+    height: 300px;
+    padding:80px 40px 0 70px;
+    box-sizing: border-box;
+}
+.market>h3{
+    font-size: 21px;
+    color: #fff;
+    font-weight: bold;
+}
+.market .mk_search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.market .mk_search>input{
+    width: calc(100% - 70px);
+    border: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 35px;
+    outline:none;
+}
+.market .mk_search>input::placeholder {
+    color: #8d8d8d;
+    font-size: 14px;
+}
+.market .mk_search>a{
+    display: block;
+    text-align: center;
+    width: 70px;
+    font-size: 14px;
+    line-height: 37px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+}
+.market .mk_tag{
+    display: flex;
+    padding-top: 20px;
+}
+.market .mk_tag h5{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.market .mk_tag a{
+    color: #fff;
+    font-size: 14px;
+}
+/*먹거리살거리/운영시간*/
+.buyntime{
+    display: flex;
+}
+.buyntime .buy{
+    width: 300px;
+    height: 300px;
+    padding-top:100px;
+    box-sizing: border-box;
+    background: url("../img/full/main_market.png") center no-repeat;
+    background-size: cover;
+}
+.buyntime .buy>p{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.buyntime .buy>a{
+    display: block;
+    margin:15px auto 0;
+    width: 123px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.buyntime .buy>a:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+/**/
+.buyntime .time{
+    width: 600px;
+    height: 300px;
+    background-color: #C4C4C4;
+    padding:60px 70px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.buyntime .time>h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+    border-bottom: 2px solid #fff;
+}
+.buyntime .time>span{
+    display: inline-block;
+    margin: 30px 0 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #151491;
+}
+.buyntime .time>p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.buyntime .t_list{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 25px);
+}
+.buyntime .t_list a{
+    display: block;
+    width: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.buyntime .t_list .t_l_on{
+    background-color: #151491;
+}
+    /*관광명소*/
+.tourlist{
+    margin-top: 300px;
+    display: flex;
+}
+.tourimg{
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+.tourimg>img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.tourimg>ul{
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+.tourimg>ul a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.tourimg>ul .t_i_up{
+    background: #fff url("../img/full/toure_up.png") center no-repeat;
+    margin-bottom: 1px;
+}
+.tourimg>ul .t_i_dw{
+    background: #fff url("../img/full/toure_dw.png") center no-repeat;
+}
+.tourtitle{
+    width: 300px;
+    height: 300px;
+    padding-top:90px;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+}
+.tourtitle .tt_stitle{
+    font-size: 14px;
+    color: #151491;
+}
+.tourtitle .tt_mtitle{
+    color: #000;
+    font-size: 24px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.tourtitle a{
+    display: block;
+    margin:50px auto 0;
+    width: 123px;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    color: #000;
+    border: 1px solid #000;
+}
+.tourtitle a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+    /*공지사항/고객센터/위치*/
+.infomation{
+    display: flex;
+}
+.i_noti{
+    width: 600px;
+    height: 300px;
+    padding: 60px 60px 0;
+    background-color:#E5E0DE ;
+    border-left: 1px solid #C4C4C4;
+    box-sizing: border-box;
+}
+.i_noti>div{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+}
+.i_noti>div>h4{
+    font-size: 21px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #151491;
+    font-weight: bold;
+}
+.i_noti>div>span a{
+    display: block;
+    color: #000;
+    padding-right: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    background: url("../img/full/icon_nex.png") right center no-repeat;
+    background-size: 12px;
+}
+.i_noti ul{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 15px 0;
+    box-sizing: border-box;
+}
+.i_noti ul li{
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.i_noti ul a{
+    color: #000;
+    font-size: 16px;
+}
+.i_noti ul a:hover{
+    color: #9c9c9c;
+}
+/**/
+.info_box a{
+    display: block;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.info_box a span{
+    display: block;
+    width: 100%;
+    padding-top: 230px;
+}
+.info_box a h3{
+    font-size: 21px;
+    color: #fff;
+    font-weight: bold;
+}
+.i_qna{
+    background: #C4C4C4;
+}
+.i_map{
+    background: #151491;
+}
+.i_qna span{
+    background:url("../img/full/icon_qna.png") center no-repeat;
+}
+.i_map span{
+    background:url("../img/full/icon_map.png") center no-repeat;
+}
+    /*행사이벤트안내*/
+.exchange{
+    width: 100%;
+    margin-top: 100px;
+}
+.exchange ul{
+    display: flex;
+}
+.exchange ul a{
+    display: block;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: #151491;
+    color: #fff;
+}
+.exchange ul .ex_on{
+    background-color: #fff;
+    color: #000;
+}
+.ex_box{
+    background-color: #fff;
+    padding: 40px 15px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.ex_box article a{
+    width: 100%;
+    display: block;
+    height: 330px;
+    position: relative;
+    color: #fff;
+}
+.ex_box article a:hover{
+    opacity: 0.9;
+}
+.ex_box article a div{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.ex_box .e_b_2{
+    width: calc(50% - 10px);
+}
+.ex_box .e_b_2 a div{
+    padding: 30px 0 30px 30px;
+    box-sizing: border-box;
+}
+.ex_box .e_b_2 a div>p{
+    font-size: 16px;
+}
+.ex_box .e_b_2 a div>h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.ex_box .e_b_1{
+    width: calc(25% - 10px);
+}
+.ex_box .e_b_1 a div{
+    text-align: center;
+}
+.ex_box .e_b_1 a div{
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.ex_box .e_b_1 a div>p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.ex_box .e_b_1 a div>span{
+    display: inline-block;
+    font-size: 12px;
+    padding-right:15px;
+    margin-top: 35px;
+    background: url("../img/full/icon_nex_white.png") center right no-repeat;
+    background-size: 12px;
+}
+.ex_box .e_b_2 .e_b_img_00{
+    background: url("../img/full/ex_00.png") center no-repeat; 
+    background-size: cover; 
+}
+.ex_box .e_b_1 .e_b_img_01{
+    background: url("../img/full/ex_01.png") center no-repeat;  
+    background-size: cover; 
+}
+.ex_box .e_b_1 .e_b_img_02{
+    background: url("../img/full/ex_02.png") center no-repeat;  
+    background-size: cover; 
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .fulltt{
+        width: 360px;
+        padding-top: 275px;
+        margin: -136px 0 0 -180px;
+    }
+    /**/
+    .sec{
+        padding-top: 297px;
+        background-size:1538px auto ;
+    }
+    #mainWrap{
+        width: 960px;
+    }
+    /*상점찾기*/
+    .market{
+        width: 480px;
+        height: 240px;
+        padding:40px 30px 0 40px;
+    }
+    .market>h3{
+        font-size: 18px;
+    }
+    .market .mk_search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+    }
+    /*먹거리살거리/운영시간*/
+    .buyntime .buy{
+        width: 240px;
+        height: 240px;
+        padding-top:70px;
+    }
+    .buyntime .buy>p{
+        font-size: 22px;
+    }
+    .buyntime .buy>a{
+        font-size: 14px;
+    }
+    /**/
+    .buyntime .time{
+        width: 480px;
+        height: 240px;
+        padding:30px 60px 0;
+    }
+    .buyntime .time>h3{
+        font-size: 22px;
+    }
+    .buyntime .time>span{
+        margin: 20px 0 10px;
+        font-size: 19px;
+    }
+    .buyntime .time>p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .buyntime .t_list a{
+        width: 8px;
+        padding-top: 8px;
+    }
+    /*관광명소*/
+    .tourlist{
+        margin-top: 240px;
+    }
+    .tourimg{
+        width: 480px;
+        height: 240px;
+    }
+    .tourimg>ul{
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+    }
+    .tourtitle{
+        width: 240px;
+        height: 240px;
+        padding-top:50px;
+    }
+    .tourtitle .tt_mtitle{
+        font-size: 20px;
+    }
+    .tourtitle a{
+        font-size: 14px;
+    }
+    /*공지사항/고객센터/위치*/
+    .i_noti{
+        width: 480px;
+        height: 240px;
+        padding: 35px 30px 0;
+    }
+    .i_noti>div>h4{
+        font-size: 20px;
+    }
+    .i_noti ul{
+        padding: 30px 25px 0;
+    }
+    /**/
+    .info_box a{
+        width: 240px;
+        height: 240px;
+    }
+    .info_box a span{
+        padding-top: 180px;
+    }
+    .i_qna span{
+        background-size: 160px auto;
+    }
+    .i_map span{
+        background-size: 100px auto;    
+    }
+    /*행사이벤트안내*/
+    .exchange ul a{
+        width: 240px;
+    }
+    .ex_box article a{
+        height: 300px;
+    }
+    
+
+}
+@media only screen and (max-width: 960px) {
+    .fulltt{
+        width: 45%;
+        padding-top: 37%;
+        margin: -15% 0 0 -22%;
+    }
+    /*시작*/
+    .sec{
+        padding-top: 320px;
+        background:url("../img/full/m_main_intro.png") center top no-repeat;
+    }
+    #mainWrap{
+        width: 100%;
+    }
+    /*상점찾기*/
+    .market{
+        width: 100%;
+        height: 300px;
+        padding:80px 50px;
+        background-color: #151491;
+    }
+    .market>h3{
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .market .mk_search>input::placeholder {
+        font-size: 12px;
+    }
+    .market .mk_tag{
+        display: flex;
+        padding-top: 20px;
+    }
+    /*먹거리살거리/운영시간*/
+    .buyntime{
+        display: block;
+    }
+    .buyntime .buy{
+        width: 100%;
+        height: 100%;
+        padding-top:100px;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+        background: url("../img/full/m_buy.png") center no-repeat;
+        background-size: cover;
+    }
+    /**/
+    .buyntime .time{
+        width: 100%;
+        height: 100%;
+        padding:100px 70px 100px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .buyntime .time>h3{
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 50px;
+        border-bottom: 2px solid #fff;
+    }
+     /*관광명소*/
+    .tourlist{
+        margin-top: 150px;
+    }
+    .tourimg{
+        width: 60%;
+        height: 300px;
+    }
+    .tourimg>ul{
+        bottom: 110px;
+    }
+    .tourimg>ul a{
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .tourtitle{
+        width: 40%;
+        height: 300px;
+        padding-top:90px;
+        box-sizing: border-box;
+        background-color: #fff;
+        text-align: center;
+    }
+    /*공지사항/고객센터/위치*/
+    .infomation{
+        flex-wrap: wrap;
+    }
+    .i_noti{
+        width: 100%;
+        height: 100%;
+        padding: 80px 60px;
+        border-left: 0;
+    }
+    .i_noti>div{
+        padding-bottom: 20px;
+    }
+    /**/
+    .info_box{
+        width: 50%;
+    }
+    .info_box a{
+        width: 100%;
+        height: 100%;
+        padding: 20% 0;
+        box-sizing: border-box;
+    }
+    .info_box a h3{
+        font-size: 20px;
+    }
+    /*행사이벤트안내*/
+    .exchange ul li{
+        width: 50%;
+    }
+    .exchange ul a{
+        width: 100%;
+    }
+    .ex_box{
+        padding: 40px 10px 60px;
+        flex-wrap: wrap;
+    }
+    .ex_box article{
+        margin-bottom: 10px;
+    }
+    .ex_box article a{
+        height: 330px;
+    }
+    .ex_box .e_b_2{
+        width: 100%;
+    }
+    .ex_box .e_b_2 a div>p{
+        font-size: 16px;
+    }
+    .ex_box .e_b_1{
+        width: 50%;
+    }
+
+
+}
+@media only screen and (max-width: 500px) {
+
+    /*상점찾기*/
+    .market{
+        padding:80px 25px;
+    }
+    .buyntime .buy>a{
+        width: 100px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .buyntime .time{
+        padding:80px 25px 80px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .tourtitle a{
+        width: 100px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .i_noti{
+        padding: 80px 20px 80px;
+    }
+    .info_box a h3{
+        font-size: 18px;
+    }
+
+}

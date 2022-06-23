@@ -1,0 +1,9 @@
+CREATE DATABASE project_sm
+    DEFAULT CHARACTER SET = 'utf8mb4';
+CREATE TABLE sumoon(  
+    no int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100),
+    writer VARCHAR(70),
+    day TIMESTAMP,
+    content TEXT
+) DEFAULT CHARSET UTF8 COMMENT 'newTable';

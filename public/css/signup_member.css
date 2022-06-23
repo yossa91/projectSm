@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+#member_t{
+    width: 1200px;
+    height: 100vh ;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+}
+.member_t_Wrap{
+    position: absolute;
+    width: 600px;
+    top:50%;
+    left: 50%;;
+    transform: translate(-50%, -50%);
+}
+.member_t_Wrap>h2{
+    text-align: center;
+    color: #0B1EA8;
+    font-size: 35px;
+    padding-bottom: 15px;
+    border-bottom: 10px solid #0B1EA8;
+}
+.member_t_Wrap p{
+    text-align: center;
+    padding-top:50px;
+    font-size: 24px;
+}
+/**/
+.mb_type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 50px;
+}
+.mb_type a{
+    display: block;
+    width: calc(33.3333% - 6px);
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    padding:175px 0 35px ;
+    text-align: center;
+    color: #090909;
+}
+.mb_type a p{
+    font-size: 18px;    
+    font-weight: bold;
+}
+.mb_type .on{
+    color: #fff;
+    background-color: #0B1EA8;
+}
+.user{
+    background: url('../img/full/signup_user.png') center 65px no-repeat ;
+    background-size: auto 80px;
+}
+.seller1{
+    background: url('../img/full/signup_seller1.png') center 65px no-repeat ;
+    background-size: auto 80px;
+}
+.seller2{
+    background: url('../img/full/signup_seller2.png') center 65px no-repeat ;
+        background-size: auto 80px;
+}
+
+/**/
+.next{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.next a{
+    font-size: 16px;
+    padding: 7px 100px;
+    border: 0;
+    background-color: #0B1EA8;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    #member_t{
+        width: 100%;
+    }
+    
+
+}
+@media only screen and (max-width: 960px) {
+ #member_t{
+     width: 100%;
+ }
+}
+@media only screen and (max-width: 650px) {
+
+    .member_t_Wrap{
+        position: absolute;
+        width: 90%;
+        top:50%;
+        left: 50%;;
+        transform: translate(-50%, -50%);
+    }
+    /**/
+    .mb_type{
+        margin: 15px 0 40px;
+    }
+    .mb_type div{
+        padding:100px 0 35px ;
+    }
+    .mb_type a{
+        padding:100px 0 35px ;
+    }
+    .mb_type a p{
+        font-size: 16px;    
+        font-weight: inherit;
+    }
+    .user{
+        background: url('../img/full/signup_user.png') center 50px no-repeat ;
+        background-size: auto 65px;
+    }
+    .seller1{
+        background: url('../img/full/signup_seller1.png') center 50px no-repeat ;
+        background-size: auto 65px;
+    }
+    .seller2{
+        background: url('../img/full/signup_seller2.png') center 50px no-repeat ;
+            background-size: auto 65px;
+    }
+
+   }

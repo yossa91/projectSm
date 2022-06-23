@@ -1,0 +1,500 @@
+@charset "UTF-8";
+  main{
+    margin-top: 70px;
+  }
+/*상단타이틀,서브메*/
+.introTop{
+  width: 100%;
+  height: 300px;
+  background: url("../img/full/intro_top.png") no-repeat bottom;
+}
+.submenuTitle{
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 115px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.submenuTitle>h2{
+  font-size:1.88rem ;
+  font-weight: 700;
+}
+.submenuTitle>p{
+  font-size:1rem ;
+  padding-top: 10px;
+}
+.submenu{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.submenu>ul{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:-30px ;
+  display: flex;
+  justify-content: space-between;
+}
+.submenu>ul li{
+  width: calc(20% - 0.8px);
+}
+.submenu>ul li>a{
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  color: #191919;
+  line-height: 60px;
+  font-size:1rem ;
+}
+.submenu>ul li .on{
+background-color: #0B1EA8;
+color: #fff;
+}
+/*소개글시작*/
+.introBox{
+  width: 1200px;
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 70px auto 0;
+  background-color: #fff;
+}
+.introBoxShare{
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #191919;
+}
+.introBoxShare>h2{
+  font-size: 1.5rem;
+}
+.introBoxShare>div{
+  padding: 2px;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+}
+/**/
+.introTextBox{
+  width: 100%;
+  padding: 100px 0;
+}
+.title_r, .title_l{
+  width: 600px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight:lighter;
+  line-height: 50px;
+}
+.title_r>span, .title_l>span{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.title_l{
+  text-align: right;
+}
+.tb{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.tb div{
+  width: calc(50% - 20px);
+  font-size: 1.12rem;
+  line-height: 28px;
+}
+.tb div .tbbold{
+font-weight: bold;
+}
+/**/
+.h3tt{
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #191919;
+}
+.introPoint{
+  padding-bottom: 200px;
+}
+.introPoint>div{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  padding: 40px 0;
+  border-bottom: 1px solid #C4C4C4;
+}
+.introPoint>div div{
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid #C4C4C4;
+  box-sizing: border-box;
+}
+.introPoint>div div:last-child{
+  border-right: none;
+}
+.introPoint>div div h3{
+  font-size: 0.87rem;
+  line-height: 40px;
+}
+.introPoint>div div p{
+  font-size: 1.75rem;
+  line-height: 40px;
+  font-weight: 400;
+}
+.introPoint>div div .color{
+  font-size: 2rem;
+  line-height: 40px;
+  font-weight: bold;
+  color: #0B1EA8;
+}
+.introPoint>div div .bd{
+  font-size: 2rem;
+  line-height: 40px;
+  font-weight: bold;
+}
+.introPoint .mintroPointBox2{
+  display: none;
+}
+/*찾아오시는길*/
+.introAddr{
+  padding-bottom: 100px;
+}
+.introAddr>h2{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.introAddr .introMap{
+  padding-bottom: 50px;
+}
+.addrNotice>p{
+  font-size: 1rem;
+  padding:15px 0 70px 15px;
+}
+.addrNotice>ul{
+  padding: 0 0 15px 15px;
+  display: flex;
+}
+.addrNotice>ul li{
+  margin-right: 30px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.addrNotice>h4{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 25px 0 15px 15px;
+}
+.addrNotice .subNo2, .addrNotice .subNo3{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right:5px;
+}
+.addrNotice .subNo2{
+  background: url("../img/full/station.png") 0 -46px no-repeat ;
+}
+.addrNotice .subNo3{
+  background: url("../img/full/station.png") -18px -46px no-repeat ;
+}
+.addrNotice .no1, .addrNotice .no2, .addrNotice .no3, .addrNotice .no4, .addrNotice .no5, .addrNotice .no6{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right:5px;
+}
+.addrNotice .no1{
+  background: url("../img/full/station.png") -41px -44px no-repeat ;
+}
+.addrNotice .no2{
+  background: url("../img/full/station.png") -62px -44px no-repeat ;
+}
+.addrNotice .no3{
+  background: url("../img/full/station.png") -83px -44px no-repeat ;
+}
+.addrNotice .no4{
+  background: url("../img/full/station.png") -105px -44px no-repeat ;
+}
+.addrNotice .no5{
+  background: url("../img/full/station.png") -126px -44px no-repeat ;
+}
+.addrNotice .no6{
+  background: url("../img/full/station.png") -147px -44px no-repeat ;
+}
+.addrStation ul{
+  padding: 25px 0 0 15px;
+}
+.addrStation ul li{
+  margin-bottom: 5px;
+  font-size: 1rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+.addrStation .s_gan,.addrStation .s_ji,.addrStation .s_il,.addrStation .s_ja,.addrStation .s_gb{
+  display: inline-block;
+  width: 26px;
+  height: 16px;
+  margin-right:12px;
+}
+.addrStation .s_gan{
+  background: url("../img/full/station.png") 0 0 no-repeat ;
+}
+.addrStation .s_ji{
+  background: url("../img/full/station.png") -60px 0 no-repeat ;
+}
+.addrStation .s_il{
+  background: url("../img/full/station.png") -150px 0 no-repeat ;
+}
+.addrStation .s_ja{
+  background: url("../img/full/station.png") -300px 0 no-repeat ;
+}
+.addrStation .s_gb{
+  background: url("../img/full/station.png") -180px 0 no-repeat ;
+}
+.addrStation .s_nong{
+  background: url("../img/full/station.png") 0 -20px no-repeat ;
+  display: inline-block;
+  width: 33px;
+  height: 16px;
+  margin-right:5px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .submenuTitle{
+    width: 960px;
+  }
+  .submenu{
+    width: 960px;
+  }
+  /*소개글시작*/
+  .introBox{
+    width: 960px;
+  }
+  .introPoint>div div p{
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .introPoint>div div .intr_45{
+    li
+  }
+  .introPoint>div div .color{
+    font-size: 1.62rem;
+  }
+  .introPoint>div div .bd{
+    font-size: 1.62rem;
+  }
+  /*찾아오시는길*/
+  .addrNotice>ul li{
+    margin-right: 15px;
+  }
+}
+
+
+
+@media only screen and (max-width: 960px) {
+  main{
+    margin-top: 0;
+  }
+  .introTop{
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+  }
+  .submenuTitle{
+    width: 100%;
+    height: 160px;
+    padding-top: 100px;
+  }
+  .submenuTitle>h2{
+    font-size:1.25rem ;
+  }
+  .submenuTitle>p{
+    display: none;
+  }
+  .submenu{
+    display: none;
+  }
+  /*소개글시작*/
+  .introBox{
+    width: 100%;
+    padding: 0;
+    box-sizing:inherit;
+    margin:60px auto 0;
+    background-color: #E5E0DE;
+  }
+  .introBoxShare{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 60px 15px 15px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 0;
+  }
+  /**/
+  .introTextBox{
+    width: calc(100% - 30px);
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  .title_r{
+    padding-top: 100px;
+    border-top: 1px solid #191919;
+  }
+  .title_r, .title_l{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight:lighter;
+    line-height: 40px;
+    text-align: center;
+  }
+  .title_r>span, .title_l>span{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .title_l>span{
+    display: block;
+  }
+  .tb{
+    width: 100%;
+    display: inherit;
+    padding-bottom: 100px;
+  }
+  .tb div{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 28px;
+  }
+  /**/
+  .introPoint{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 15px;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+  }
+  .introPoint>.introPointBox2{
+    display: none;
+  }
+  .introPoint>div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    border-bottom:0;
+    padding: 0;
+  }
+  .introPoint>div div{
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #C4C4C4;
+    border-bottom:1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .introPoint>div div:nth-child(even){
+    border-right: none;
+  }
+
+  .introPoint>div div h3{
+    font-size: 0.87rem;
+    line-height: 40px;
+  }
+  .introPoint>div div p{
+    font-size: 1.12rem;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  .introPoint>div div .color{
+    font-size: 1.5rem;
+  }
+  .introPoint>div div .bd{
+    font-size: 1.5rem;
+  }
+  .introPoint .mintroPointBox2{
+    display: block;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: bold;
+    color: #0B1EA8;
+    padding-top: 10px;
+  }
+  /*찾아오시는길 여기서부터 수정~~~~~~~~~~~~~~~~~~*/
+  .introAddr{
+    padding:70px 0 80px;
+    background-color: #fff;
+    margin-top: 80px;
+  }
+  .introAddr iframe{
+    height: 400px;
+  }
+  .introAddr>h2{
+    font-size: 1.12rem;
+    padding-bottom: 30px;
+  }
+  .introAddr .introMap{
+    padding-bottom: 40px;
+  }
+  .addrNotice>p{
+    font-size: 1rem;
+    padding:15px 0 70px 15px;
+  }
+  .addrNotice .h3tt{
+    font-size: 1.12rem;
+  }
+  .addrNotice{
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .addrNotice>ul{
+    flex-wrap: wrap;
+  }
+  .addrNotice>ul li{
+    margin-right: 10px;
+    line-height: 20px;
+  }
+  .addrNotice>ul li::after{
+    content: "/";
+    padding-left: 10px;
+  }
+  .addrNotice>ul li:last-child::after{
+    content: "";
+  }
+  .addrNotice>h4{
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 20px 0 15px 15px;
+  }
+  .addrNotice .subNo2, .addrNotice .subNo3{
+    display:none;
+  }
+  .addrNotice .no1, .addrNotice .no2, .addrNotice .no3, .addrNotice .no4, .addrNotice .no5, .addrNotice .no6{
+    display:none;
+  }
+  .addrStation{
+    display: none;
+  }
+
+
+}
+@media only screen and (max-width: 475px) {
+ .introPoint .intro_tx{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .introPoint .intr_45{
+    display: none;
+  }
+}

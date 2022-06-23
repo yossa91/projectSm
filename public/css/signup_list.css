@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+#signup_w_box{
+    width: 1200px;
+    background-color: #fff;
+    padding: 70px 0 100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.signup_l_main{
+    width: 600px;
+    margin: auto;
+}
+.signup_l_main>h2{
+    text-align: center;
+    color: #0B1EA8;
+    font-size: 35px;
+    padding-bottom: 15px;
+    border-bottom: 10px solid #0B1EA8;
+}
+/**/
+.signup{
+    width: 500px;
+    margin: auto;
+    padding: 20px 0 60px;
+}
+.signup form>div{
+    width: 100%;
+    border: 1px solid #b3b3b3;
+    margin-bottom: 15px;
+}
+.signup form>div .member_type{
+    line-height: 30px;
+    padding:0 30px;
+    box-sizing: border-box;
+    color: #0B1EA8;
+    font-weight: bold;
+}
+.signup form h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.signup form>div input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    line-height: 30px;
+    padding:0 15px;
+    box-sizing: border-box;
+
+}
+.signup form>div input:focus{
+    outline: none;
+}
+.signup form>div input::placeholder{
+    font-size: 16px;
+    color: #b3b3b3;
+}
+/**/
+.file{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.file #file_name{
+    width: 80%;
+    padding-left: 15px;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #b3b3b3;
+}
+.file .file_btn{
+    display: block;
+    width: 20%;
+    text-align: center;
+    background-color: #b3b3b3;
+    line-height: 30px;
+    cursor: pointer;
+    color: #090909;
+}
+#file_find{
+    display: none;
+}
+/**/
+.next{
+    width: 100%;
+}
+.next input{
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    padding: 7px 100px;
+    border: 0;
+    background-color: #0B1EA8;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.next input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #signup_w_box{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 960px) {
+    #signup_w_box{
+        padding-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .signup_l_main{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .signup{
+        width: calc(100% - 30px);
+    }
+    .file #file_name{
+        width: 70%;
+    }
+    .file .file_btn{
+        width: 30%;
+        font-size: 14px;
+    }
+    .next input{
+        display: block;
+        margin: auto;
+        font-size: 16px;
+        padding: 7px 50px;
+        border: 0;
+        background-color: #0B1EA8;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+
+   }

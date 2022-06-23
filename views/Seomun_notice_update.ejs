@@ -1,0 +1,33 @@
+
+    <main>
+        <section id="noticeBox">
+            <h2>공지사항 작성하기</h2>
+            <form action="/update/<%= row[0].no %>" method="POST">
+                <table class="notice_tb">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="*">
+                    </colgroup>
+                    <tr>
+                        <td><label for="">제목</label></td>
+                        <td><input type="text" name="title" value="<%= row[0].title %>" id="nt_title"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">작성자</label></td>
+                        <td><input type="text" name="writer" value="<%= row[0].writer %>" id="nt_id"></td>
+                    </tr>
+                    <tr>
+                        <td>내용작성 :</td>
+                        <td><textarea id="nt_text" name="content"><%= row[0].content %></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="저장" id="nt_save">
+                            <input type="button" value="back" onclick="javascript:location.href='/pna'">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+

@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "debug": "^4.3.4",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^6.14.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "static": "^2.0.0"
+  },
+  "name": "project1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/yossa91/nodeTest.git)"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": ""
+}

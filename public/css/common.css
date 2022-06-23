@@ -1,0 +1,238 @@
+@charset "UTF-8";
+body{
+  background-color: #E5E0DE;
+  color:#191919;
+  font-family: 'Noto Sans KR','Apple SD Gothic Neo','malgun gothic','맑은 고딕','돋움','dotum', sans-serif;
+}
+input:focus, select:focus, option:focus, textarea:focus, button:focus{
+	outline: none;
+}
+input{
+  -webkit-appearance : none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+/*header*/
+.m_header{
+  display: none;
+  z-index: 999;
+}
+.w_header{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top:0;
+    z-index: 999;
+}
+.w_header>nav{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+}
+.t_icon a{
+  display:block;
+  width: 208px;
+  padding-top: 70px;
+  background: url("../img/full/logo.png")center no-repeat;
+}
+.t_menu{
+  display: flex;
+}
+.t_menu>ul{
+  display: flex;
+}
+.t_menu>ul>li>a{
+  display: block;
+  width: 160px;
+  line-height: 70px;
+  text-align: center;
+  color: #191919;
+  font-weight: bold;
+  font-size: 16px;
+}
+.t_menu>ul>li>a:hover{
+  color: #797979;
+}
+.t_menu .t_lang>a{
+  display: block;
+  width: 135px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #E5E0DE;
+  color: #191919;
+  font-weight: bold;
+  font-size: 12px;
+}
+.t_menu .t_search>a{
+  display: block;
+  width: 70px;
+  padding-top: 70px;
+  background:#0B1EA8 url("../img/full/icon_search.png")center no-repeat;
+}
+/*footer*/
+footer{
+  width: 100%;
+  background-color: #191919;
+  color: #fff;
+}
+.footerWrap{
+  width: 1200px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../img/full/bottom_logo.png")left center no-repeat;
+}
+.footerWrap address{
+  font-size: 14px;
+}
+.footerWrap .f_link{
+  width: 240px;
+  font-size: 16px;
+  line-height: 40px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  cursor: pointer;
+  background: url("../img/full/footer_list.png") no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+  .w_header>nav{
+    width: 960px;
+    margin: auto;
+  }
+  .t_menu>ul>li>a{
+    width: 130px;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+/*footer*/
+  .footerWrap{
+    width: 960px;
+    background-size: 140px auto;
+  }
+  .footerWrap address{
+    font-size: 12px;
+  }
+  .footerWrap .f_link{
+    width: 180px;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-left: 15px;
+  }
+
+
+
+
+
+}
+@media only screen and (max-width: 960px) {
+  .w_header{
+    display: none;
+  }
+  .m_header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+  .m_header>nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .m_header>nav>h1{
+    width: 270px;
+    background: url("../img/full/m_logo.png")center no-repeat;
+    background-size:100%;
+  }
+  .m_header .m_buger_btn a{
+    display: block;
+    width: 60px;
+    padding-top: 60px;
+    background: url("../img/full/m_menuicon.png")center no-repeat;
+    background-size: cover;
+    background-size: 40px auto;
+  }
+  .m_header .m_t_search a{
+    display: block;
+    width: 60px;
+    padding-top: 60px;
+    background: url("../img/full/m_searchicon.png")center no-repeat;
+    background-size: cover;
+    background-size: 50px auto;
+  }
+/*footer*/
+.footerWrap{
+  display: block;
+  height: inherit;
+  padding: 150px 0 40px 0;
+  width: calc(100% - 60px);
+  margin:auto;
+  background-size: 140px auto;
+  background-position: 0 40px;
+  position: relative;
+}
+.footerWrap address{
+  font-size: 12px;
+}
+.footerWrap .f_link{
+  position: absolute;
+  top:60px;
+  right: 0;
+  width: 180px;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+
+
+
+
+
+
+
+}
+@media only screen and (max-width: 475px) {
+  /*header*/
+  .m_header>nav>h1{
+    width: 160px;
+    background: url("../img/full/m_logo.png")center no-repeat;
+    background-size:100%;
+  }
+  .m_header .m_buger_btn a{
+    background-size: 30px auto;
+  }
+  .m_header .m_t_search a{
+    background-size: 40px auto;
+  }
+  /*footer*/
+  .footerWrap{
+    padding: 110px 0 40px 0;
+    background-size: 100px auto;
+    background-position: 0 30px;
+  }
+  .footerWrap address{
+    font-size: 12px;
+  }
+  .footerWrap .f_link{
+    top:50px;
+    width: 140px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+
+
+}

@@ -1,0 +1,460 @@
+@charset "UTF-8";
+
+
+/*상단타이틀,서브메뉴*/
+main{
+  margin-top: 70px;
+}
+.qnaTop{
+    width: 100%;
+    height: 300px;
+    background: url("../img/full/list_top.png") no-repeat;
+}
+.subMenu{
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 115px;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+}
+.subMenu>h2{
+    font-size:1.88rem ;
+    font-weight: 700;
+}
+.subMenu>p{
+    font-size:1rem ;
+    padding-top: 10px;
+}
+.subMenu ul{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    display:flex;
+    justify-content: space-between;
+}
+.subMenu ul li{
+    width: calc(20% - 0.8px);
+}
+.subMenu ul a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    color: #191919;
+    line-height: 60px;
+    font-size:1rem ;
+}
+.subMenu ul li .on{
+    background-color: #0B1EA8;
+    color: #fff;
+}
+/*구역메뉴&지도*/
+.mlWrap{
+    width: 1200px;
+    margin: auto; 
+    padding-top: 60px ;
+}
+.mlWrap ul{
+    display: flex;
+    height: 60px;
+    box-sizing: border-box;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+}
+.mlWrap ul li:not(:last-of-type){
+    background: url("../img/full/bar.png") right center no-repeat;
+}
+.mlWrap ul a{
+    display: block;
+    font-size: 18px;
+    color: #000;
+    padding:20px 30px;
+}
+.mlWrap ul .ml_on{
+    color: #0B1EA8;
+    border-bottom: 4px solid #0B1EA8;
+    box-sizing: border-box;
+}
+.mapList .ml_img{
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 30px;
+}
+.mapList .ml_img>img{
+    width: 100%;
+}
+
+
+/*검색란*/
+.qnaBoard{
+    width: 1200px;
+    margin: 30px auto 50px;
+    background-color: #fff;
+    padding: 40px 40px 100px;
+    box-sizing: border-box;
+}
+.searchBox{
+    width: 100%;
+    background-color:#C4C4C4 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.searchBox>span{
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+/*검색옵션*/
+.searchBox .searchOption{
+    width: 182px;
+    background:#fff url("../img/full/icon_option.png") center right no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.searchBox .searchOption>label{
+    position: absolute;
+    font-size: 16px;
+    top:16px;
+    left: 12px;
+
+}
+.searchBox .searchOption select{
+    width: 100%;
+    height: 52px;
+    border: 0;
+    appearance: none;
+    opacity: 0;
+}
+/*검색어박스*/
+.searchBox .searchTxt{
+    width: 320px;
+    background:#fff url("../img/full/icon_search_2.png") center right no-repeat;
+    background-size: contain;
+    margin-left: 15px;
+}
+.searchBox .searchTxt input{
+    width: calc(100% - 70px);
+    height: 52px;
+    font-size: 16px;
+    border: 0;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+.searchBox .searchTxt input::placeholder{
+    color: #C4C4C4;
+}
+/*table*/
+.searchlist .slWeb table{
+    width: 100%;
+    border-top: 2px solid #191919;
+    border-bottom: 1px solid #C4C4C4;
+    border-spacing:0;
+    border-collapse : collapse;
+    margin-top: 20px;
+}
+.searchlist .slWeb table .tt_on{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 10px 10px;
+    color: #0B1EA8;
+    font-weight: bold;
+    font-size: 14px;
+    border:1px solid #0B1EA8;
+}
+.searchlist .slWeb table .tt_on:hover{
+    background-color: #0B1EA8;
+    color: #fff;
+}
+.slWeb th{
+    font-weight: bold;
+}
+.slWeb th, .slWeb td{
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    padding: 30px 20px 30px 10px;
+}
+.slWeb td{
+    border-top: 1px solid #C4C4C4;
+}
+.slWeb .t_title{
+    font-weight: bold;
+}
+/*table 모바일*/
+.slMobile{
+    display: none;
+}
+/*페이지번호*/
+.pageNumber{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.pageNumber a{
+    display: block;
+    flex-shrink: 0;
+    width: 40px;
+    line-height: 40px;
+    color: #191919;
+    border: 1px solid #191919;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+.pageNumber a:last-child{
+    margin-right: 0;
+}
+.pageNumber .p_on{
+    background-color: #0B1EA8;
+    color: #fff;
+}
+.pageNumber .pre_a_btn{
+    background: url("../img/full/icon_a_pre.png") center no-repeat;
+}
+.pageNumber .pre_btn{
+    background: url("../img/full/icon_pre.png") center no-repeat;
+    margin-right: 20px;
+}
+.pageNumber .next_a_btn{
+    background: url("../img/full/icon_a_nex.png") center no-repeat;
+}
+.pageNumber .next_btn{
+    background: url("../img/full/icon_nex.png") center no-repeat;
+    margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    /*검색란*/
+    .qnaBoard{
+        width: 960px;
+    }
+    /*table*/
+    .searchlist .slWeb table a{
+        font-size: 12px;
+    }
+    .slWeb th, .slWeb td{
+        font-size: 16px;
+    }
+    /*구역메뉴&지도*/
+    .mlWrap{
+        width: 960px;
+    }
+    .mlWrap ul{
+        height: 58px;
+    }
+    .mapList .ml_img .ml_img_sc{
+        width: 100%;
+        height: 600px;
+        overflow: scroll;
+    }
+    .mapList .ml_img>img{
+        width: 1100px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 960px) {
+    main{
+        margin-top: 0;
+    }
+    .qnaTop{
+        height: 160px;
+    }
+    .subMenu{
+        width: 100%;
+        height: 160px;
+        padding-top: 100px;
+    }
+    .subMenu h2{
+        font-size:1.25rem ;
+    }
+    .subMenu p{
+        display: none;
+    }
+    .subMenu ul{
+        display: none;
+    }
+    /*검색란*/
+    .qnaBoard{
+        width: calc(100% - 30px);
+        padding: 15px 15px 70px 15px;
+    }
+    .searchBox{
+        display: inherit;
+        padding: 30px 0;
+    }
+    .searchBox>span{
+        display: none;
+    }
+    /*검색옵션*/
+    .searchBox .searchOption{
+        width: calc(100% - 20px);
+        position: relative;
+        margin: 0 auto;
+    }
+    .searchBox .searchOption>label{
+        font-size: 14px;
+        top:16px;
+        left: 12px;
+    }
+    .searchBox .searchOption select{
+        width: 100%;
+        height: 40px;
+        border: 0;
+        appearance: none;
+        opacity: 0;
+    }
+    /*검색어박스*/
+    .searchBox .searchTxt{
+        width: calc(100% - 20px);
+        margin: 15px auto 0;
+    }
+    .searchBox .searchTxt input{
+        height: 40px;
+        font-size: 14px;
+    }
+    /*table 모바일*/
+    .slWeb{
+        display: none;
+    }
+    .slMobile{
+        display: block;
+        margin-top: 30px;
+    }
+    .slMobile ul{
+        border-top: 1px solid #000;
+    }
+    .slMobile ul li{
+        border-bottom: 1px solid #C4C4C4;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .slMobile ul li h3{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .slMobile ul li .sm_num,.slMobile ul li p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .slMobile ul li .sm_cate{
+        display: block;
+        font-size: 14px;
+        color: #505050;
+        margin-top: 15px;
+    }
+    .slMobile ul li a{
+        display: block;
+        width: 70%;
+        margin: auto;
+        font-size: 16px;
+        line-height: 35px;
+        margin-top: 20px;
+        color: #0B1EA8;
+        border: 1px solid #0B1EA8;
+    }
+    /*페이지번호*/
+    .pageNumber a{
+        font-size: 12px;
+        width: 30px;
+        line-height: 30px;
+        box-sizing: border-box;
+    }
+    .pageNumber .pre_btn{
+        margin-right: 15px;
+    }
+    .pageNumber .next_btn{
+        margin-left: 15px;
+    }
+
+    /*구역메뉴&지도*/
+    .mlWrap{
+        width: calc(100% - 30px);
+    }
+    .mlWrap ul{
+        display: flex;
+        height: auto;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        border-bottom: none;
+    }
+    .mlWrap ul li:not(:last-of-type){
+        background:none;
+    }
+    .mlWrap ul li{
+        width: calc(50% - 0.5px);
+        margin-bottom: 1px;
+    }
+    .mlWrap ul a{
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        padding:20px 0;
+        background-color: #fff;
+    }
+    .mlWrap ul .ml_on{
+        background-color: #0B1EA8;
+        color: #fff;
+        border-bottom:none;
+    }
+
+
+    .mapList .ml_img{
+        padding: 15px;
+    }
+    .mapList .ml_img .ml_img_sc{
+        width: 100%;
+        height: 350px;
+        overflow: scroll;
+    }
+    .mapList .ml_img>img{
+        width: 1100px;
+    }
+
+
+}
+@media only screen and (max-width: 475px) {
+        /*페이지번호*/
+        .pageNumber a{
+            font-size: 12px;
+            width: 20px;
+            line-height: 20px;
+            box-sizing: border-box;
+        }
+        .pageNumber .pre_a_btn{
+            background-size: contain;
+        }
+        .pageNumber .pre_btn{
+            background-size: contain;
+            margin-right: 12px;
+        }
+        .pageNumber .next_a_btn{
+            background-size: contain;
+        }
+        .pageNumber .next_btn{
+            background-size: contain;
+            margin-left: 12px;
+        }
+        /*테이블안 데이터 이미지표시 사이즈 수정*/
+        .slMobile td>img{
+            width: 12px;
+        }
+
+
+
+   }

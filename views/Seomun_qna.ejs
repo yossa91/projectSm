@@ -1,0 +1,95 @@
+
+  <main>
+    <article class="qnaTop">
+        <div class="subMenu">
+            <h2>고객센터</h2>
+            <p>쇼핑과 관광에 도움이 되는 유익한 정보를 제공해 드립니다.</p>
+            <ul>
+                <li><a href="" class="on">공지사항</a></li>
+                <li><a href="">행사안내</a></li>
+                <li><a href="" >언론보도</a></li>
+                <li><a href="">문의 및 제안</a></li>
+                <li><a href="" class="sub_blue">입점신청</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="qnaBoard">
+      <div class="write"><a href="/newMemo">*관리자 글작성</a></div>
+      <div class="searchBox">
+        <span>SEARCH</span>
+        <div class="searchOption">
+          <label for="fruit">
+            제목
+          </label>
+          <select for="s_option">
+            <option id="s_option" value="s_title">제목</option>
+            <option id="s_option" value="s_detail">내용</option>
+          </select>
+        </div>
+        <div class="searchTxt">
+          <input type="text" placeholder="검색어를 입력해 주세요">
+        </div>
+      </div>
+
+      <div class="searchlist">
+        <div class="slWeb">
+          <table>
+            <colgroup>
+              <col width="10%" >
+              <col width="*" >
+              <col width="15%" >
+              <col width="15%" >
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="num">번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% rows.forEach((row, index) => { %>
+                <tr>
+                    <td class="t_number"><%= row.no %></td>
+                    <td class="t_lt"><a href="/page/<%=row.no%>"><%= row.title %></a></td>
+                    <td><%= row.writer %></td>
+                    <td><%= row.day %></td>
+                </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div><!--웹table-->
+
+        <div class="slMobile">
+          <table>
+            <colgroup>
+              <col width="15%" >
+              <col width="*" >
+              <col width="15%" >
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="t_number">73</td>
+                <td class="t_lt">
+                  <p>2022.03.24</p>
+                  <a href="#">4월 3일 서문야시장 임시휴장 </a></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!--모바일table-->
+
+        <div class="pageNumber">
+          <a href="#" class="pre_a_btn"></a>
+          <a href="#" class="pre_btn"></a>
+          <a href="#" class="p_on" >1</a>
+          <a href="#" class="next_btn"></a>
+          <a href="#" class="next_a_btn"></a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+

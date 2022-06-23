@@ -1,0 +1,33 @@
+
+    <main>
+        <section id="noticeBox">
+            <h2>공지사항 작성하기</h2>
+            <form action="/store" method="POST">
+                <table class="notice_tb">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="*">
+                    </colgroup>
+                    <tr>
+                        <td>제목</td>
+                        <td><input type="text" name="title" id="nt_title"></td>
+                    </tr>
+                    <tr>
+                        <td>작성자</td>
+                        <td><input type="text" name="writer" id="nt_id"></td>
+                    </tr>
+                    <tr>
+                        <td>내용작성 :</td>
+                        <td><textarea id="nt_text" name="content"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="저장" class="nt_save">
+                            <input type="button" value="취소" class="nt_save" onclick="javascript:location.href='/Seomun_qna'">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
