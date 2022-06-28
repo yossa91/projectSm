@@ -4,6 +4,15 @@ const port = 3000;
 var expressLayouts = require('express-ejs-layouts');
 var logger = require('morgan');
 var path = require('path');
+const http = require('https');
+const cron = require('node-cron');
+
+//헤로쿠 아침 8시부터 11시까지
+cron.schedule(function(){
+    http.get('https://nw5jo.herokuapp.com/');
+});
+
+
 
 
 
