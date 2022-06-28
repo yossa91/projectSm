@@ -14,15 +14,15 @@ router.use(expressLayouts);
 
 //메인페이지 연결
 router.get('/', (req,res) => {
-    res.render('index.ejs');
+    res.render('/index.ejs');
 });
 
 
 router.get('/intro', (req,res) => {
-  res.render('Seomun_intro.ejs');
+  res.render('/Seomun_intro.ejs');
 });
 router.get('/list', (req,res) => {
-  res.render('Seomun_list.ejs');
+  res.render('/Seomun_list.ejs');
 });
 
 
@@ -30,12 +30,12 @@ router.get('/list', (req,res) => {
 
 router.get('/qna', (req,res) => {
   db.getAllMemos((rows) => {
-      res.render('Seomun_qna', { rows : rows });
+      res.render('/Seomun_qna', { rows : rows });
     }
   );
 });
 router.get('/newMemo',(req,res) => {
-  res.render('Seomun_notice');  
+  res.render('/Seomun_notice');  
 });
 
 
@@ -44,7 +44,7 @@ router.post('/store', check('title').isLength({min:1 , max:100}),
     let errs = validationResult(req);
     console.log(errs);
     if(errs['errors'].length > 0){
-      res.render('Seomun_notice',{errs : errs['errors']});
+      res.render('/Seomun_notice',{errs : errs['errors']});
     }else{
       let param = JSON.parse(JSON.stringify(req.body));
       let title = param['title'];
@@ -59,7 +59,7 @@ router.post('/store', check('title').isLength({min:1 , max:100}),
   router.get('/page/:no', (req, res) => {
     var no = req.params.no;
     db.page(no, (result) => {
-      res.render('Seomun_notice_list',{result : result});
+      res.render('/Seomun_notice_list',{result : result});
     });
   });
 
@@ -70,7 +70,7 @@ router.get('/update/:no',(req, res) => {
     if(typeof no === 'undefined' || row.length <= 0){
       res.status(404).json({error : 'undefined memo'});
     }else{
-      res.render('Seomun_notice_update',{row});
+      res.render('/Seomun_notice_update',{row});
     }
   });
 });
