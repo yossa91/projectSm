@@ -12,6 +12,7 @@ const db = require("./../db.js");
 
 router.use(expressLayouts);
 
+
 //메인페이지 연결
 router.get('/', (req,res) => {
     res.render('index.ejs');
@@ -117,6 +118,9 @@ router.get('/signup_member_type', (req,res) => {
 router.get('/signup', (req,res) => {
   res.render('signup_list.ejs');
 });
+
+
+
 
 
 module.exports = router;

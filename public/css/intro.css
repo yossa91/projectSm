@@ -25,12 +25,12 @@
   font-size:1rem ;
   padding-top: 10px;
 }
-.submenu{
+.int_submenu{
   width: 1200px;
   margin: 0 auto;
   position: relative;
 }
-.submenu>ul{
+.int_submenu>ul{
   width: 100%;
   position: absolute;
   left: 0;
@@ -38,10 +38,10 @@
   display: flex;
   justify-content: space-between;
 }
-.submenu>ul li{
-  width: calc(20% - 0.8px);
+.int_submenu>ul li{
+  width: calc(25% - 0.8px);
 }
-.submenu>ul li>a{
+.int_submenu>ul li>a{
   width: 100%;
   display: block;
   text-align: center;
@@ -50,7 +50,7 @@
   line-height: 60px;
   font-size:1rem ;
 }
-.submenu>ul li .on{
+.int_submenu>ul li .on{
 background-color: #0B1EA8;
 color: #fff;
 }
@@ -272,7 +272,7 @@ font-weight: bold;
   .submenuTitle{
     width: 960px;
   }
-  .submenu{
+  .int_submenu{
     width: 960px;
   }
   /*소개글시작*/
@@ -320,7 +320,7 @@ font-weight: bold;
   .submenuTitle>p{
     display: none;
   }
-  .submenu{
+  .int_submenu{
     display: none;
   }
   /*소개글시작*/

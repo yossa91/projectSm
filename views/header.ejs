@@ -1,0 +1,77 @@
+<div class="w_header">
+    <nav>
+      <h1 class="t_icon"><a href="/"></a></h1>
+      <div class="t_menu">
+        <ul>
+          <li><a href="/intro">야시장소개</a></li>
+          <li><a href="/list">먹거리살거리</a></li>
+          <li><a href="#">서문예술거리</a></li>
+          <li><a href="/qna">참여마당</a></li>
+        </ul>
+        <div class="t_lang"><a href="#">LANGUAGE ▼</a></div>
+        <div class="t_search"><a href="login"></a></div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="m_header">
+    <nav>
+      <div class="m_buger_btn"><a class="buger_btn"></a></div>
+      <h1></h1>
+      <div class="m_t_search"><a href="login"></a></div>
+      <ul class="m_t_menu">
+        <li><a class="m_t_ct_menu">야시장소개</a>
+          <ul class="m_t_submenu">
+            <li><a href="/intro">개요</a></li>
+            <li><a href="/">역사</a></li>
+            <li><a href="/">상인회</a></li>
+            <li><a href="/">찾아오시는 길</a></li>
+          </ul>
+        </li>
+        <li><a class="m_t_ct_menu">먹거리살거리</a>
+          <ul class="m_t_submenu">
+            <li><a href="/">특화골목</a></li>
+            <li><a href="/">주요맛집</a></li>
+            <li><a href="/list">매대위치</a></li>
+            <li><a href="/">운영시간</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_t_ct_menu">서문예술거리</a></li>
+        <ul class="m_t_submenu"></ul>
+        <li><a class="m_t_ct_menu">참여마당</a>
+          <ul class="m_t_submenu">
+            <li><a href="/qna">공지사항</a></li>
+            <li><a href="/">행사안내</a></li>
+            <li><a href="/">언론보도</a></li>
+            <li><a href="/">문의 및 제안</a></li>
+            <li><a href="/">입점신청</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    
+    var buger = document.querySelector('.buger_btn');
+    var sidemenu = document.querySelector('.m_t_menu');
+    buger.addEventListener('click',function(){
+      if(sidemenu.scrollHeight > 500){
+        console.log('아니?');
+        sidemenu.style.height = 0;      
+      }else{
+        sidemenu.style.height = 'calc(100vh - 60px)';
+      }
+    });
+    
+    var subm = document.querySelectorAll('.m_t_ct_menu');
+    var submenus = document.querySelectorAll('.m_t_submenu');
+    subm.forEach(function(el,index){
+        el.onclick = function(evt){
+          for(var i = 0; i< submenus.length;i++){
+            submenus[i].style.height = '0';
+          }
+            submenus[index].style.height = submenus[index].scrollHeight + 'px';
+        }
+    });
+
+  </script>

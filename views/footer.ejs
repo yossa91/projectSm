@@ -1,0 +1,33 @@
+<div class="footerWrap">
+    <address>
+      <p>대구 남구 대명로 215 대구광역시상인회관4층, 재단법인 대구전통시장진흥재단ㆍ
+        상권육성팀 Admin</p>
+      <p>Seomun Night Market Ⓒ2016 Daegu traditional Market Support Agency.
+        All Rights Reserved </p>
+    </address>
+    <div class="f_link">
+      관련사이트
+      <ul class="f_link_list">
+        <li><a href="https://www.jung.daegu.kr/new/pages/main/">대구광역시</a></li>
+        <li><a href="https://www.jung.daegu.kr/new/pages/main/">대구광역시 중구</a></li>
+        <li><a href="http://dtmsa.or.kr/">대구전통시장진흥재단</a></li>
+        <li><a href="https://www.mss.go.kr/site/smba/main.do">중소벤처기업부</a></li>
+        <li><a href="https://www.semas.or.kr/index_main.html">소상공인시장진흥공단</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    var familmenu = document.querySelector('.f_link');
+    var familmenuList = document.querySelector('.f_link_list');
+    var familmenuListHei = familmenuList.scrollHeight;
+    familmenu.addEventListener('click',function(){
+        familmenuList.style.height = familmenuListHei + 'px';
+    });
+    document.body.onclick = function(){
+        if(familmenuList.clientHeight >  0){
+            familmenuList.style.height = 0;
+        }
+    }
+
+  </script>

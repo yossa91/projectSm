@@ -10,7 +10,7 @@ main{
     height: 300px;
     background: url("../img/full/list_top.png") no-repeat;
 }
-.subMenu{
+.list_subMenu{
   width: 1200px;
   height: 300px;
   margin: 0 auto;
@@ -20,15 +20,15 @@ main{
   color: #fff;
   position: relative;
 }
-.subMenu>h2{
+.list_subMenu>h2{
     font-size:1.88rem ;
     font-weight: 700;
 }
-.subMenu>p{
+.list_subMenu>p{
     font-size:1rem ;
     padding-top: 10px;
 }
-.subMenu ul{
+.list_subMenu ul{
     width: 100%;
     position: absolute;
     left: 0;
@@ -36,10 +36,10 @@ main{
     display:flex;
     justify-content: space-between;
 }
-.subMenu ul li{
-    width: calc(20% - 0.8px);
+.list_subMenu ul li{
+    width: calc(25% - 0.8px);
 }
-.subMenu ul a{
+.list_subMenu ul a{
     width: 100%;
     display: block;
     text-align: center;
@@ -48,7 +48,7 @@ main{
     line-height: 60px;
     font-size:1rem ;
 }
-.subMenu ul li .on{
+.list_subMenu ul li .on{
     background-color: #0B1EA8;
     color: #fff;
 }
@@ -274,18 +274,18 @@ main{
     .qnaTop{
         height: 160px;
     }
-    .subMenu{
+    .list_subMenu{
         width: 100%;
         height: 160px;
         padding-top: 100px;
     }
-    .subMenu h2{
+    .list_subMenu h2{
         font-size:1.25rem ;
     }
-    .subMenu p{
+    .list_subMenu p{
         display: none;
     }
-    .subMenu ul{
+    .list_subMenu ul{
         display: none;
     }
     /*검색란*/
