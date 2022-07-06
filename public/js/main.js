@@ -37,6 +37,46 @@ time_btn.forEach(function(el,idx){
     ex_list[0].style.display = 'none';
   });
 
+  /*주변관광지*/
+  var tourList = document.querySelectorAll('.tourimg>img');
+  var up =  document.querySelector('.t_i_up');
+  var dw =  document.querySelector('.t_i_dw');
+  var tourBox = document.querySelectorAll('.tourtitle');
+  var move = 0;
+  tourBox[0].style.display = 'block';
+
+  up.addEventListener('click',function(){
+    for(var i = 0; i< tourList.length; i++){
+      tourList[i].style.display = 'none';
+      tourBox[i].style.display = 'none';
+    }
+    if(move == 0){
+      tourList[0].style.display = 'block';
+      tourBox[0].style.display = 'block';
+      move = 0;
+    }else{
+      move--;
+      tourList[move].style.display = 'block';
+      tourBox[move].style.display = 'block';
+    }
+  });
+
+  dw.addEventListener('click',function(){
+    for(var i = 0; i< tourList.length; i++){
+      tourList[i].style.display = 'none';
+      tourBox[i].style.display = 'none';
+    }
+    if(move == tourList.length-1){
+      tourList[tourList.length-1].style.display = 'block';
+      tourBox[tourList.length-1].style.display = 'block';
+      move = tourList.length-1;
+    }else{
+      move++;
+      tourList[move].style.display = 'block';
+      tourBox[move].style.display = 'block';
+    }
+  });
+
   /*메인 스크롤*/
   document.addEventListener('scroll', function() {
     var mainHei = document.querySelector('.fullsc').clientHeight;

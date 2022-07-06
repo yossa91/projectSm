@@ -178,6 +178,9 @@
     height: 300px;
     position: relative;
 }
+.tourimg>img:not(:first-of-type){
+    display: none;
+}
 .tourimg>img{
     position: absolute;
     right: 0;
@@ -201,6 +204,7 @@
     background: #fff url("../img/full/toure_dw.png") center no-repeat;
 }
 .tourtitle{
+    display: none;
     width: 300px;
     height: 300px;
     padding-top:90px;
