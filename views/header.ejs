@@ -8,7 +8,14 @@
           <li><a href="#">서문예술거리</a></li>
           <li><a href="/qna">참여마당</a></li>
         </ul>
-        <div class="t_lang"><a href="#">LANGUAGE ▼</a></div>
+        <div class="t_lang"><a>LANGUAGE ▼</a>
+          <ul class="t_l_list">
+            <li><a>한국어</a></li>
+            <li><a>中國語</a></li>
+            <li><a>日本語</a></li>
+            <li><a>ENGLISH</a></li>
+          </ul>
+        </div>
         <div class="t_search"><a href="login"></a></div>
       </div>
     </nav>
@@ -51,7 +58,7 @@
     </nav>
   </div>
   <script>
-    
+    /*모바일 버거메뉴*/
     var buger = document.querySelector('.buger_btn');
     var sidemenu = document.querySelector('.m_t_menu');
     buger.addEventListener('click',function(){
@@ -72,6 +79,19 @@
           }
             submenus[index].style.height = submenus[index].scrollHeight + 'px';
         }
+    });
+
+    /*랭귀이이이---지 메뉴*/
+    var langMenu = document.querySelector('.t_lang>a');
+    var langList = document.querySelector('.t_l_list');
+    
+    langMenu.addEventListener('click',function(){
+      if(langList.clientHeight > 100){
+        langList.style.height = 0;
+      }else{
+        langList.style.height = langList.scrollHeight +'px';
+      }
+      /* 닫히는 이벤트는 footer.ejs에 같이 작성*/
     });
 
   </script>

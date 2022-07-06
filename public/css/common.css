@@ -58,7 +58,11 @@ input{
 .t_menu>ul>li>a:hover{
   color: #797979;
 }
+.t_lang{
+  position:relative;
+}
 .t_menu .t_lang>a{
+  cursor: pointer;
   display: block;
   width: 135px;
   line-height: 70px;
@@ -68,6 +72,26 @@ input{
   font-weight: bold;
   font-size: 12px;
 }
+.t_l_list{
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top:70px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.t_l_list a{
+  display: block;
+  color: #191919;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid #E5E0DE;
+  cursor: pointer;
+}
+
 .t_menu .t_search>a{
   display: block;
   width: 70px;
