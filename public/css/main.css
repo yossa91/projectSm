@@ -8,6 +8,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    transition: 1s;
 }
 .fulltt{
     display: block;
@@ -127,21 +128,25 @@
     box-sizing: border-box;
     position: relative;
 }
-.buyntime .time>h3{
+.buyntime .time>.t_box{
+    display: none;
+    transition: 0.3s;
+}
+.buyntime .time>.t_box>h3{
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     line-height: 50px;
     border-bottom: 2px solid #fff;
 }
-.buyntime .time>span{
+.buyntime .time>.t_box>span{
     display: inline-block;
     margin: 30px 0 10px;
     font-size: 21px;
     font-weight: bold;
     color: #151491;
 }
-.buyntime .time>p{
+.buyntime .time>.t_box>p{
     font-size: 16px;
     line-height: 25px;
 }
@@ -158,6 +163,7 @@
     margin-left: 10px;
     border-radius: 100%;
     background-color: #fff;
+    z-index: 10;
 }
 .buyntime .t_list .t_l_on{
     background-color: #151491;
@@ -316,10 +322,10 @@
     width: 100%;
     margin-top: 100px;
 }
-.exchange ul{
+.exchange>ul{
     display: flex;
 }
-.exchange ul a{
+.exchange>ul a{
     display: block;
     width: 300px;
     text-align: center;
@@ -329,7 +335,7 @@
     background-color: #151491;
     color: #fff;
 }
-.exchange ul .ex_on{
+.exchange>ul .ex_on{
     background-color: #fff;
     color: #000;
 }
@@ -407,7 +413,47 @@
     background: url("../img/full/ex_02.png") center no-repeat;  
     background-size: cover; 
 }
-
+/**/
+.ex_map{
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 15px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.ex_map>article{
+    width: calc(50% - 10px);
+    height: 400px;
+}
+.ex_map .ex_map_google>iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.ex_map .ex_map_station{
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.ex_map .ex_map_station>h4{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    border-bottom: 1px solid #8d8d8d;
+    margin-bottom: 10px;
+}
+.ex_map .ex_map_station>span{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-left: 15px;
+}
+.ex_map .ex_map_station>p, .ex_map .ex_map_station>ul{
+    padding-left: 30px;
+}
+.ex_map .ex_map_station>ul li{
+    line-height: 20px;
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -457,14 +503,14 @@
         height: 240px;
         padding:30px 60px 0;
     }
-    .buyntime .time>h3{
+    .buyntime .time>.t_box>h3{
         font-size: 22px;
     }
-    .buyntime .time>span{
+    .buyntime .time>.t_box>span{
         margin: 20px 0 10px;
         font-size: 19px;
     }
-    .buyntime .time>p{
+    .buyntime .time>.t_box>p{
         font-size: 16px;
         line-height: 23px;
     }
@@ -523,7 +569,7 @@
         background-size: 100px auto;    
     }
     /*행사이벤트안내*/
-    .exchange ul a{
+    .exchange>ul a{
         width: 240px;
     }
     .ex_box article a{
@@ -586,7 +632,7 @@
         box-sizing: border-box;
         position: relative;
     }
-    .buyntime .time>h3{
+    .buyntime .time>.t_box>h3{
         font-size: 24px;
         font-weight: bold;
         color: #fff;
@@ -644,10 +690,10 @@
         font-size: 20px;
     }
     /*행사이벤트안내*/
-    .exchange ul li{
+    .exchange>ul li{
         width: 50%;
     }
-    .exchange ul a{
+    .exchange>ul a{
         width: 100%;
     }
     .ex_box{
@@ -672,6 +718,30 @@
 
 
 }
+
+@media only screen and (max-width: 720px) {
+    /**/
+    .ex_map{
+        display: block;
+    }
+    .ex_map>article{
+        width: 100%;
+        height: inherit;
+    }
+    .ex_map .ex_map_google{
+        height: 300px;
+    }
+    .ex_map .ex_map_station{
+        padding:20px 0;
+        box-sizing: border-box;
+    }
+ 
+
+
+    
+}
+
+
 @media only screen and (max-width: 500px) {
 
     /*상점찾기*/

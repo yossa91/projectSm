@@ -96,6 +96,14 @@
     .login input:focus{
         outline: none;
     }
+    .kakao_login{
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .kakao_login>img{
+        cursor: pointer;
+    }
     .login div{
         text-align:center;
         padding: 20px 0 60px;
